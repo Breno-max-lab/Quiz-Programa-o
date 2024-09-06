@@ -1,0 +1,157 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.5s ease-in-out;
+}
+
+#start-screen, .quiz-container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+#start-screen:hover, .quiz-container:hover {
+    transform: scale(1.05);
+}
+
+/* Efeitos visuais */
+h1, h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 26px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Input de nome do usuário */
+#user-name {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: border 0.3s ease-in-out;
+}
+
+#user-name:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+}
+
+/* Botões */
+button {
+    padding: 12px 25px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.2);
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+button:active {
+    background-color: #004085;
+    transform: translateY(0);
+}
+
+/* Estilos para o quiz */
+.quiz-header {
+    margin-bottom: 20px;
+    animation: fadeInUp 0.8s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px;
+    transition: transform 0.2s ease;
+}
+
+li:hover {
+    transform: scale(1.02);
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+/* Botão de recarregar o quiz */
+button#submit {
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Responsividade */
+@media (max-width: 400px) {
+    body {
+        padding: 20px;
+    }
+
+    #start-screen, .quiz-container {
+        width: 100%;
+    }
+
+    h1, h2 {
+        font-size: 22px;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #user-name {
+        font-size: 14px;
+        padding: 12px;
+    }
+}

@@ -41,5 +41,3 @@ Adoramos feedbacks e novas ideias! Se você quiser adicionar mais perguntas, mel
 **link:** https://quiz-programa-o.vercel.app/
 
 Para saber mais sobre JavaScript, acesse: [https://developer.mozilla.org/pt-BR/docs/Web/JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
-
-Lembre-se: um README bem escrito é o cartão de visitas do seu projeto!

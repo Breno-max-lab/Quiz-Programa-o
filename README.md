@@ -39,5 +39,3 @@ Adoramos feedbacks e novas ideias! Se você quiser adicionar mais perguntas, mel
 * **Chamada para ação:** Incentive os usuários a testarem o quiz e a contribuírem com o projeto.
 
 **link:** https://quiz-programa-o.vercel.app/
-
-Para saber mais sobre JavaScript, acesse: [https://developer.mozilla.org/pt-BR/docs/Web/JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
